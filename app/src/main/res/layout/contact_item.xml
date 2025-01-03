@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Imagem de fundo -->
+        <ImageView
+            android:id="@+id/imagemContacto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <!-- Nome -->
+        <TextView
+            android:id="@+id/nomeContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imagemContacto"
+            android:layout_marginStart="8dp"
+            android:text="Nome"
+            android:textColor="@color/blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Número -->
+
+        <!-- Botão de editar -->
+
+        <TextView
+            android:id="@+id/numeroContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nomeContacto"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@id/imagemContacto"
+            android:maxLines="1"
+            android:text="Número" />
+
+        <ImageView
+            android:id="@+id/botaoEditarContacto"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="56dp"
+            android:src="@drawable/baseline_edit_24" />
+
+        <!-- Botão de apagar -->
+        <ImageView
+            android:id="@+id/botaoApagarContacto"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/baseline_delete_24" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

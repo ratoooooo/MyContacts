@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddContact">
+
+    <TextView
+        android:id="@+id/cabecalhoAdicionarContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Adicionar Contacto"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imagemContactoView"
+        android:background="@drawable/blue_border"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/cabecalhoAdicionarContacto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:contentDescription="Imagem do contacto"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/nomeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/imagemContactoView"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border"
+        android:hint="Insira o nome"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/moradaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/nomeEditText"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border"
+        android:hint="Insira a morada"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/numeroEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/moradaEditText"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border"
+        android:hint="Insira o número"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/botaoGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numeroEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_done_24"
+        android:contentDescription="Guardar Contacto" />
+</RelativeLayout>
