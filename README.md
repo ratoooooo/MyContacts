@@ -28,6 +28,9 @@ Este é um projeto Android simples que permite aos utilizadores adicionar, edita
 - Dispositivo Android ou emulador.
 - Conhecimentos básicos de Kotlin e Android.
 
+## APK da aplicação
+APOK download: <https://drive.google.com/drive/folders/1JKXF3JYX8-p6DtaU7SBsPy49iX_s5QjY?usp=sharing>
+
 ## Licença
 
 Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
